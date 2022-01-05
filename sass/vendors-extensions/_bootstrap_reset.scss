@@ -1,0 +1,14 @@
+
+$navbar-dark-toggler-border-color: transparent;
+$navbar-light-color: white;
+$navbar-light-hover-color: rgba(255, 255, 255, 0.349);
+$navbar-light-toggler-icon-bg: url('../assets/shared/icon-hamburger.svg');
+
+$offcanvas-border-width: 0;
+$offcanvas-horizontal-width: 300px;
+$modal-backdrop-bg: transparent;
+
+$btn-close-bg: url('../assets/shared/icon-close.svg');
+$btn-close-width: 1.5rem;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

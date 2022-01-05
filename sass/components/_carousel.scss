@@ -1,0 +1,113 @@
+
+@use '../base/colors' as *;
+@use '../abstracts/mixins' as *;
+
+
+.carousel{
+
+  
+  &-fade{
+    .active.carousel-item-start,
+      .active.carousel-item-end {
+        z-index: 0;
+        opacity: 0;
+        transition: opacity 400ms ease-in-out;
+    }
+  }
+  
+  @media screen and (min-width: 778px){
+    &-item{
+    
+      &-next, 
+      &-prev{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &.active{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+  @media screen and (min-width: 992px){
+    &-item{
+    
+      &-next, 
+      &-prev{
+        flex-direction: row;
+      }
+      &.active{
+        flex-direction: row;
+      }
+    }
+  }
+
+  
+  
+  &-caption{
+  right: 0;
+  left: 0;
+  color: $primary;
+  }
+
+  &-indicators {
+    position: relative;
+
+    
+    
+    [data-bs-target] {
+      color: $secondary;
+      background-color: transparent;
+      width: auto;
+      height: auto;
+      text-indent: 0;
+      padding: 0.5rem 0.8rem;
+    }
+
+    &-crew {
+      display: block;
+      text-align: center;
+
+      @media screen and (min-width: 992px){
+      width: 90%;
+      position: absolute;
+      bottom: 0;
+      text-align: left;
+      margin: auto;
+      max-width: 1320px;
+      }
+      [data-bs-target]{
+        background-color: white;
+        margin-left: 20px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        padding: 0;
+        @include hover-state(0);
+      }
+    }
+
+    &-tech{
+
+      @media screen and (min-width:992px){
+        position: absolute;
+        top: 0;
+      }
+      [data-bs-target]{
+        background-color: white;
+        color: black;
+        margin-left: 10px;
+        width: 40px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        padding: 0;
+        @include hover-state(0);
+      }
+    }
+  }
+}
+

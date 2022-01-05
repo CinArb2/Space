@@ -1,0 +1,35 @@
+
+@use '../base/colors' as *;
+
+@mixin btnCircular($background, $position, $margin) {
+  width: clamp(150px, 25vw, 200px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+  background-color: $background;
+  position: $position;
+  margin-inline: $margin;  
+}
+
+@mixin blur($pixels, $background) {
+  backdrop-filter: blur($pixels);
+  background-color: $background;
+}
+
+@mixin hover-state($width) {
+  
+  &::before{
+    content: ' ';
+    width: 0;
+    transition: width 400ms ease-in-out;
+  }
+
+  &:hover::before, &:focus::before{
+    content: ' ';
+    position: absolute;
+    background-color: $state-hover;
+    width: $width;
+    height: 4px;
+    bottom: -10px;
+  }
+}

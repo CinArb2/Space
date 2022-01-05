@@ -1,0 +1,56 @@
+@use '../base/colors' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/mixins' as *;
+
+.blur{
+  @include blur(12px, $blur-backgound);
+}
+
+.navbar{
+  
+  &-light{
+    .navbar-nav{
+      .show > .nav-link,
+    .nav-link.active {
+      color: $secondary;
+      &::before{
+        content: ' ';
+        position: absolute;
+        background-color: $secondary;
+        width: 50%;
+        height: 4px;
+        bottom: -10px;
+        left:0;
+      }
+    }
+    }
+  }
+  &-expand-md{
+    @media screen and (min-width: 768px){
+      .blur{
+        @include blur(12px, $blur-backgound);
+      }
+    }
+  }
+
+  @media screen and (min-width: 770px){
+    &-item{
+      @include hover-state(40%);
+    }
+    
+  }
+  
+  @media screen and (min-width: 992px){
+    &::before{
+    content: " ";
+    position: absolute;
+    width: 30%;
+    height: 1px;
+    background-color: $secondary;
+    top:50%;
+    left: 120px;
+    z-index: 10000;
+    }
+  }
+}
+

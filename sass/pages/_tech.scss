@@ -1,0 +1,51 @@
+
+.carousel-image-tech{
+    height: 30vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  &-launch{
+    background-image: url('../../assets/technology/image-launch-vehicle-landscape.jpg');
+    @extend .carousel-image-tech;
+
+    @media screen and (min-width: 992px){
+      height: 50vh;
+      background-image: url('../../assets/technology/image-launch-vehicle-portrait.jpg');
+    }
+  }
+  &-space{
+    background-image: url('../../assets/technology/image-spaceport-landscape.jpg');
+    @extend .carousel-image-tech;
+
+    @media screen and (min-width: 992px){
+      height: 50vh;
+      background-image: url('../../assets/technology/image-spaceport-portrait.jpg');
+    }
+  }
+  &-capsule{
+    background-image: url('../../assets/technology/image-space-capsule-landscape.jpg');
+    @extend .carousel-image-tech;
+
+    @media screen and (min-width: 992px){
+      height: 50vh;
+      background-image: url('../../assets/technology/image-space-capsule-portrait.jpg');
+    }
+  }
+}
+
+.bg-image-tech{
+  background-image: url("../../assets/technology/background-technology-mobile.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  
+  @media screen and (min-width: 768px) {
+    &{
+      background-image: url("../../assets/technology/background-technology-tablet.jpg");
+    }
+  }
+  @media screen and (min-width: 992px) {
+    background-image: url("../../assets/technology/background-technology-desktop.jpg");
+  }
+}
