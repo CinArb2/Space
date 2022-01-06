@@ -1250,35 +1250,35 @@ a:hover {
   background-position: bottom;
 }
 .carousel-image-tech-launch {
-  background-image: url("../../assets/technology/image-launch-vehicle-landscape.jpg");
+  background-image: url("../assets/technology/image-launch-vehicle-landscape.jpg");
 }
 @media screen and (min-width: 992px) {
   .carousel-image-tech-launch {
     height: 50vh;
-    background-image: url("../../assets/technology/image-launch-vehicle-portrait.jpg");
+    background-image: url("../assets/technology/image-launch-vehicle-portrait.jpg");
   }
 }
 .carousel-image-tech-space {
-  background-image: url("../../assets/technology/image-spaceport-landscape.jpg");
+  background-image: url("../assets/technology/image-spaceport-landscape.jpg");
 }
 @media screen and (min-width: 992px) {
   .carousel-image-tech-space {
     height: 50vh;
-    background-image: url("../../assets/technology/image-spaceport-portrait.jpg");
+    background-image: url("../assets/technology/image-spaceport-portrait.jpg");
   }
 }
 .carousel-image-tech-capsule {
-  background-image: url("../../assets/technology/image-space-capsule-landscape.jpg");
+  background-image: url("../assets/technology/image-space-capsule-landscape.jpg");
 }
 @media screen and (min-width: 992px) {
   .carousel-image-tech-capsule {
     height: 50vh;
-    background-image: url("../../assets/technology/image-space-capsule-portrait.jpg");
+    background-image: url("../assets/technology/image-space-capsule-portrait.jpg");
   }
 }
 
 .bg-image-tech {
-  background-image: url("../../assets/technology/background-technology-mobile.jpg");
+  background-image: url("../assets/technology/background-technology-mobile.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1286,12 +1286,12 @@ a:hover {
 }
 @media screen and (min-width: 768px) {
   .bg-image-tech {
-    background-image: url("../../assets/technology/background-technology-tablet.jpg");
+    background-image: url("../assets/technology/background-technology-tablet.jpg");
   }
 }
 @media screen and (min-width: 992px) {
   .bg-image-tech {
-    background-image: url("../../assets/technology/background-technology-desktop.jpg");
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
   }
 }
 
